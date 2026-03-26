@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Índice de Massa Corporal</title>
+    <link rel="stylesheet" type="text/css" href="../aula 3 - reelaborado/imc.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="principal">
+        <h1 id="title">Calculadora de IMC</h1>
+        <p>O Índice de Massa Corporal, amplamente conhecido como IMC, é uma das ferramentas mais utilizadas por
+            profissionais de saúde e entusiastas do bem-estar para realizar uma triagem rápida sobre o estado
+            nutricional de
+            uma pessoa. Calculado através da relação entre o peso e o quadrado da altura, ele fornece uma estimativa que
+            ajuda a identificar categorias como baixo peso, peso normal, sobrepeso ou obesidade. Embora seja um cálculo
+            simples e direto, o IMC é um ponto de partida valioso para quem busca entender melhor a própria composição
+            corporal e adotar hábitos de vida mais equilibrados.
+        </p>
+
+        <div id="calculadora-imc">
+            <div id="height-title">
+                <span class="material-symbols-outlined">straighten</span>
+                <p>Altura (em cm): </p>
+            </div>
+            <input type="number" id="altura" placeholder="Ex. 160 cm">
+            <div id="weight-title">
+                <span class="material-symbols-outlined">scale</span>
+                <p>Peso (em kg): </p>
+            </div>
+            <input type="number" id="peso" placeholder="Ex. 60kg">
+            <div id="botao">
+                <button id="calcular">Calcular</button>
+            </div>
+        </div>
+
+        <div id="imc-resultado">
+            <h3>O seu Índice de Massa Corporal é igual a: </h3>
+            <h2><span id="output"></span></h2>
+        </div>
+        <div id="categorias">
+            <div id="abaixo-do-peso" class="hidden">
+                <div id="abaixo-do-peso-class">
+                    <h3>< 18.5</h3>
+                    <h2>Abaixo do peso</h2>
+                </div>
+                <p>Seu índice está abaixo da faixa considerada ideal. Isso pode indicar uma ingestão calórica
+                    insuficiente ou outras condições de saúde. É importante buscar a orientação de um nutricionista para
+                    um plano alimentar equilibrado</p>
+            </div>
+            <div id="normal" class="hidden">
+                <div id="normal-class">
+                    <h3>18.5 a 24.9</h3>
+                    <h2>Peso normal</h2>
+                </div>
+                <p>Parabéns! Seu IMC está na faixa de peso saudável. Manter uma dieta balanceada e a prática regular de
+                    atividades físicas é fundamental para conservar esses resultados e garantir longevidade.</p>
+            </div>
+            <div id="sobrepeso" class="hidden">
+                <div id="sobrepeso-class">
+                    <h3>25.0 a 29.9</h3>
+                    <h2>Sobrepeso</h2>
+                </div>
+                <p>Seu índice indica um peso acima do recomendado. Esta faixa é um sinal de alerta para o
+                    desenvolvimento de condições como hipertensão e diabetes. Pequenas mudanças nos hábitos diários já
+                    podem fazer uma grande diferença</p>
+            </div>
+            <div id="obesidade" class="hidden">
+                <div id="obesidade-class">
+                    <h3>> 30.0</h3>
+                    <h2>Obesidade</h2>
+                </div>
+                <p>Seu IMC aponta para a categoria de obesidade, o que aumenta significativamente os riscos para a saúde
+                    cardiovascular e metabólica. Recomenda-se o acompanhamento com profissionais de saúde para um plano
+                    de cuidado especializado.</p>
+            </div>
+        </div>
+        <p>&copy; marzfly on github | 03.2026</p>
+        
+        <!--arquivo javascript-->
+        <script src="../aula 3 - reelaborado/imc.js"></script>
+    </div>
+</body>
+
+</html>
